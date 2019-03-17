@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+	<bean id="jungle" class="pl.jaceksysiak.spring.test.Jungle">
+		<property name="foods">
+			<props>
+				<prop key="gorilla">bannana</prop>
+				<prop key="panda">bamboo</prop>
+				<prop key="snake">eggs</prop>
+			</props>
+		</property>
+		<property name="animals">
+			<map>
+				<entry key="drapieznik1" value-ref="lion"></entry>
+				<entry key="ptak" value-ref="parrot"></entry>
+				<entry key="drapieznik2" value-ref="snake"></entry>
+				<entry key="ssaki" value-ref="monkey"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<bean class="pl.jaceksysiak.spring.test.Animal" id="lion">
+		<property name="name" value="Igor"></property>
+		<property name="type" value="lion"></property>
+	</bean>
+
+	<bean class="pl.jaceksysiak.spring.test.Animal" id="monkey">
+		<property name="name" value="Wacek"></property>
+		<property name="type" value="monkey"></property>
+	</bean>
+
+	<bean class="pl.jaceksysiak.spring.test.Animal" id="parrot">
+		<property name="name" value="Alpha"></property>
+		<property name="type" value="parrot"></property>
+	</bean>
+
+	<bean class="pl.jaceksysiak.spring.test.Animal" id="snake">
+		<property name="name" value="Bob"></property>
+		<property name="type" value="snake"></property>
+	</bean>
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
